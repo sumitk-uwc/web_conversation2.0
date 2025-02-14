@@ -18,3 +18,42 @@ export const getJWTData = async (data: any): Promise<string | undefined> => {
     return undefined;
   }
 };
+
+export const notificationList = [
+  {
+    id: 1,
+    title: "Notification 1",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+  {
+    id: 2,
+    title: "Notification 2",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+  {
+    id: 3,
+    title: "Notification 3",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+  {
+    id: 4,
+    title: "Notification 4",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+  {
+    id: 5,
+    title: "Notification 5",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+  {
+    id: 6,
+    title: "Notification 6",
+    description: "Doctor’s appointment at 6:30pm, need to pick up files the way.",
+    image: "https://picsum.photos/200",
+  },
+];

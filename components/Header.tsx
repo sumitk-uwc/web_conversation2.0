@@ -4,6 +4,7 @@ import { auth } from "@clerk/nextjs/server";
 import { UserButton } from "@clerk/nextjs";
 import { Bell } from "lucide-react";
 import { ThemeSwitch } from "./theme-switch";
+import NotificationPopover from "./NotificationPopover";
 
 const Header: React.FC = async () => {
   const { userId } = await auth();
@@ -21,28 +22,11 @@ const Header: React.FC = async () => {
           />
         </Link>
         <div className="flex items-center text-white">
-          {!isSignedIn && (
-            <>
-              <Link
-                href="sign-in"
-                className="text-slate-800 hover:text-gray-300 mr-4"
-              >
-                Log in
-              </Link>
-              <Link
-                href="sign-up"
-                className="text-slate-800 hover:text-gray-300 mr-4"
-              >
-                Sign up
-              </Link>
-            </>
-          )}
-
           {isSignedIn && (
             <div className="flex items-center gap-2">
               <div className="relative flex items-center gap-2">
                 <ThemeSwitch />
-                <Bell size={24} className="text-black dark:text-white" />
+                <NotificationPopover />
                 <span className="absolute bottom-0 right-0 text-sm text-white bg-green-600 rounded-full w-4 h-4 flex items-center justify-center">
                   1
                 </span>
