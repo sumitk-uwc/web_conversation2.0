@@ -6,6 +6,8 @@ import { Button } from "@heroui/react";
 import { useSmartSuggestionsStore } from "@/stores/smartSuggestionsStore";
 import SOSModalData from "@/components/popupNotification/SOSModalData";
 import RatingModalData from "@/components/popupNotification/RatingModalData";
+import ExpertSuggestionModalData from "@/components/popupNotification/ExpertSuggestionModalData";
+import InputModaldata from "@/components/popupNotification/InputModaldata";
 
 export default function DashboardPage() {
   const { smartPopupSuggestion } = useSmartSuggestionsStore();
@@ -17,15 +19,25 @@ export default function DashboardPage() {
       <CenterModal
         isOpen={modalVisible}
         onClose={() => setModalVisible(false)}
-        size="xl"
+        size="md"
       >
-        <SOSModalData
-          data={smartPopupSuggestion?.json_data}
+        <InputModaldata
+          data={smartPopupSuggestion?.input_data}
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
         />
-        {/* <RatingModalData
+        {/* <SOSModalData
           data={smartPopupSuggestion?.json_data}
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+        /> */}
+        {/* <RatingModalData
+          data={smartPopupSuggestion?.rating_data}
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+        /> */}
+        {/* <ExpertSuggestionModalData
+          data={smartPopupSuggestion?.json_data_expert}
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
         /> */}

@@ -93,6 +93,156 @@ export const useSmartSuggestionsStore = create<SmartSuggestionsState>()(
           },
         ],
       },
+      json_data_expert: {
+        heading: "Recommended Clinicians",
+        subheading:
+          "We have some recommended clinicians based on your locations and symptoms",
+        variant: "info",
+        card_type: "expert_suggestion",
+        scroll_data: [
+          {
+            type: "expert_card_join",
+            action: {
+              type: "pwa_route",
+              route:
+                "https://booking.unitedwecare.com/profession/Psychiatrist/Dr%20Jasmine%20Heer/40258",
+              params: {
+                source: "app2.0",
+              },
+            },
+            id: 40258,
+            name: "Dr Jasmine Heer",
+            register_as: "Psychiatrist",
+            image_link:
+              "https://firebasestorage.googleapis.com/v0/b/united-for-her.appspot.com/o/odoo%2Ffortis%2Fexperts%2FDr%20Jasmine%20heer%20photo.jpg?alt=media",
+            country: "India",
+            timezone: "IST",
+            banner: "https://app.uwc.world/content/fortis_banner_image.png",
+            date: "Tue, October 29",
+            time: "06:00 PM",
+            calling_mode: "Video Call",
+            status: "Cancelled",
+            duration: "30 min",
+            join_url: "https://meet.google.com/upw-nswm-kcn",
+            button: {
+              text: "Join Call",
+              class_name: "button-primary",
+            },
+          },
+          {
+            type: "expert_card_booking",
+            action: {
+              type: "external_route",
+              route: "https://meet.google.com/uia-tzyz-ope",
+              params: {},
+            },
+            id: 40258,
+            name: "Dr Jasmine Heer",
+            qualification: "MBBS, MD Psychiatry",
+            experience: "7",
+            image_link:
+              "https://firebasestorage.googleapis.com/v0/b/united-for-her.appspot.com/o/odoo%2Ffortis%2Fexperts%2FDr%20Jasmine%20heer%20photo.jpg?alt=media",
+            register_as: "Psychiatrist",
+            country: "India",
+            inr_fee: 1200,
+            usd_fee: 50,
+            currency: "INR",
+            languages: "English, Hindi, Punjabi",
+            location_required: false,
+            timezone: "IST",
+            banner: "https://app.uwc.world/content/fortis_banner_image.png",
+            next_available_slot: "2025-01-06 16:00:00",
+            button: {
+              text: "Book Now",
+              class_name: "button-primary",
+            },
+          },
+          {
+            type: "expert_card_booking",
+            action: {
+              type: "external_route",
+              route: "https://meet.google.com/uia-tzyz-ope",
+              params: {},
+            },
+            id: 40258,
+            name: "Dr Jasmine Heer",
+            qualification: "MBBS, MD Psychiatry",
+            experience: "7",
+            image_link:
+              "https://firebasestorage.googleapis.com/v0/b/united-for-her.appspot.com/o/odoo%2Ffortis%2Fexperts%2FDr%20Jasmine%20heer%20photo.jpg?alt=media",
+            register_as: "Psychiatrist",
+            country: "India",
+            inr_fee: 1200,
+            usd_fee: 50,
+            currency: "INR",
+            languages: "English, Hindi, Punjabi",
+            location_required: false,
+            timezone: "IST",
+            banner: "https://app.uwc.world/content/fortis_banner_image.png",
+            next_available_slot: "2025-01-06 16:00:00",
+            button: {
+              text: "Book Now",
+              class_name: "button-primary",
+            },
+          },
+        ],
+      },
+      rating_data: {
+        heading: "How Was Your Call?",
+        subheading: "Please let us know how your experience went.",
+        variant: "info",
+        card_type: "rating",
+        scroll_data: [],
+        cta_data: [
+          {
+            id: "ce3e7e99-d656-467e-a496-ba4ddb9c1b23",
+            cta_text: "Submit",
+            button_type: "submit",
+            // action: {
+            //   type: "external_route",
+            //   route: "tel:112",
+            //   params: {},
+            // },
+          },
+          {
+            id: "055f29e3-e125-44f2-96ef-330523795255",
+            cta_text: "Skip",
+            button_type: "secondary",
+            action: {
+              type: "dismiss",
+              params: {},
+            },
+          },
+        ],
+      },
+      input_data: {
+        heading: "Please Share Your Address",
+        subheading: "We need to confirm you address to proceed further.",
+        variant: "info",
+        card_type: "input",
+        scroll_data: [],
+        cta_data: [
+          {
+            id: "055f29e3-e125-44f2-96ef-330523795255",
+            cta_text: "Skip",
+            button_type: "secondary",
+            action: {
+              type: "dismiss",
+              params: {},
+            },
+          },
+          {
+            id: "ce3e7e99-d656-467e-a496-ba4ddb9c1b23",
+            cta_text: "Submit",
+            button_type: "primary",
+            action: {
+              type: "external_route",
+              route: "tel:112",
+              params: {},
+            },
+          },
+        ],
+      },
     },
 
     setSmartPopupSuggestion: (suggestion) =>
