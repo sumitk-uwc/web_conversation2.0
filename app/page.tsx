@@ -26,16 +26,16 @@ export default function Home() {
             height={200}
           />
           <h1 className="text-2xl font-semibold py-2 sm:p-4 text-slate-800">Welcome back</h1>
-        </div>
           <Button
             variant="solid"
             radius="full"
             size="md"
-            className="bg-green-600 text-slate-200 font-normal text-md px-12 py-4"
+            className="bg-green-600 text-slate-200 font-medium text-base px-12 py-4"
             onPress={() => router.push("/sign-in")}
           >
             Login to continue
           </Button>
+        </div>
         <div className="flex items-center justify-between gap-4 w-full">
           <Button variant="light" size="sm" className="text-xs text-slate-500 font-normal" onPress={() => {}} >
             Privacy policy

@@ -15,10 +15,11 @@ const Header: React.FC = async () => {
       <div className="flex justify-between items-center p-4">
         <Link href="/">
           <Image
-            src="/assets/images/United_We_Care_Light_Logo.png"
+            src="https://images.unitedwecare.com/odoo/open/logo/logo_white_long.png"
             alt="logo"
             width={150}
             height={50}
+            className="grayscale"
           />
         </Link>
         <div className="flex items-center text-white">
